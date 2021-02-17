@@ -71,7 +71,7 @@ while 1:
                     new_gameState[x,y] = 1
             
             #Una célula viva con 2 o 3 células vecinas vivas sigue viva, en otro caso muere (por "soledad" o "superpoblación").
-                elif gameState[x,y] == 1 and (n_neigh <2 or n_neigh >4):
+                elif gameState[x,y] == 1 and (n_neigh <2 or n_neigh >3):
                     new_gameState[x,y] = 0
 
             #Calculamos la posicion de cada celda.
